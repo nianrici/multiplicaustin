@@ -6,7 +6,7 @@ Sencillísima aplicación para practicar las tablas de multiplicar del 1 al 10.
 
 * Características
 
-La app está creada usando Flask y pensada para correer en un contenedor de docker o podman. Dada la simplicidad de la app y ~~lo espartano que es su creador~~ pensando en minimizar la superfície de cosas que pueden salir mal, opté por usar un contenedor de python que usase de base Alpine Linux, que contiene lo mínimo imprescindible para funcionar. Se pueden ver las librerías que se instalarán en el archivo "requisites.txt"
+La app está creada usando Flask y pensada para correer en un contenedor de docker o podman. Dada la simplicidad de la app y pensando en minimizar la superfície de cosas que pueden salir mal, opté por usar un contenedor de python que usase de base Alpine Linux, que contiene lo mínimo imprescindible para funcionar. Se pueden ver las librerías que se instalarán en el archivo "requisites.txt"
 
 * Requisitos
 
@@ -17,18 +17,21 @@ Cualquier dispositivo que tenga instalado y corriendo docker o podman.
   #+begin_src bash
 # Clonamos el repositorio
 git clone https://github.com/nianrici/multiplicaustin.git
+
 # Entramos en la carpeta
 cd multiplicaustin
+
 # Construimos la imagen del contenedor a partir del dockerfile
 docker build -t multiplicaustin .
+
 # Corremos el contenedor, si quieres usar un puerto diferente, recuerda añadir -p puerto_local:puerto_del_contenedor
 docker run --name multiplicaustin multiplicaustin
   #+end_src
--
+
 * Uso
 
-Una vez que el contenedor está *"up and running"*, accede a la interfaz web del dispositivo en el que estés corriendo la imagen usando el puerto configurado en el dockerfile tal que así: ~http://{url}:{puerto}~
+Una vez que el contenedor está "up and running", accede a la interfaz web del dispositivo en el que estés corriendo la imagen usando el puerto configurado en el dockerfile tal que así: ~http://{url}:{puerto}~
 
 * Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Puedes encontrar una copia de la licencia en el archivo LICENSE.txt. **TL;DR:** mientras me incluyas en los créditos, a mi me vale.
+Este proyecto está licenciado bajo la Licencia MIT. Puedes encontrar una copia de la licencia en el archivo LICENSE.txt. TL;DR: mientras me incluyas en los créditos, a mi me vale.
