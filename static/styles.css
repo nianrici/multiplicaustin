@@ -1,0 +1,106 @@
+/* Estilos para la página de inicio */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 12vw; /* Unidades de viewport width */
+  color: #f44336;
+}
+
+form {
+  font-size: 4vw; /* Unidades de viewport width */
+}
+
+button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 2vw 4vw; /* Unidades de viewport width */
+  font-size: 4vw; /* Unidades de viewport width */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c62828;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  padding: 1vw; /* Unidades de viewport width */
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  transform: scale(2); /* Tamaño de checkbox reducido para pantallas pequeñas */
+  vertical-align: middle;
+  margin-right: 1vw; /* Unidades de viewport width */
+}
+
+label {
+  font-size: 4vw; /* Unidades de viewport width */
+}
+
+caption {
+  text-align: center;
+  font-size: 2vw; /* Unidades de viewport width */
+  margin-bottom: 1vw; /* Unidades de viewport width */
+}
+
+/* Estilos para la página de práctica */
+form {
+  background-color: #f2f2f2;
+  padding: 3vw; /* Unidades de viewport width */
+  margin: 3vw auto; /* Unidades de viewport width */
+  max-width: 80vw; /* Unidades de viewport width */
+}
+
+input[type="number"] {
+  font-size: 2vw; /* Unidades de viewport width */
+  padding: 1vw; /* Unidades de viewport width */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1vw; /* Unidades de viewport width */
+}
+
+input[type="submit"] {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 2vw 4vw; /* Unidades de viewport width */
+  font-size: 4vw; /* Unidades de viewport width */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #c62828;
+}
+
+a button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 2vw 4vw; /* Unidades de viewport width */
+  font-size: 4vw; /* Unidades de viewport width */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+a button:hover {
+  background-color: #c62828;
+}

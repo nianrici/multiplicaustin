@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  </head>
+  <body>
+    <h1>MultiplicAustin</h1>
+    <form method="POST" action="/practice">
+      <table>
+        <tr>
+          <th colspan="3"><label for="tables">Selecciona las tablas a practicar:</label></th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="tables" value="1"> 1</td>
+          <td><input type="checkbox" name="tables" value="2"> 2</td>
+          <td><input type="checkbox" name="tables" value="3"> 3</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="tables" value="4"> 4</td>
+          <td><input type="checkbox" name="tables" value="5"> 5</td>
+          <td><input type="checkbox" name="tables" value="6"> 6</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="tables" value="7"> 7</td>
+          <td><input type="checkbox" name="tables" value="8"> 8</td>
+          <td><input type="checkbox" name="tables" value="9"> 9</td>
+        </tr>
+        <tr>
+          <th colspan="3" class="number emotion"><input type="checkbox" name="tables" value="10"> 10</th>
+        </tr>
+      </table>
+      <br>
+      <input type="submit" value="Empezar">
+    </form>
+  </body>
+</html>
